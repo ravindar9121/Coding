@@ -1,0 +1,29 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        System.out.println("Try programiz.pro");
+        Scanner sc = new Scanner(System.in);
+       
+        String b = sc.nextLine();
+        String a1 = b.toLowerCase();
+        int counter = 0;
+        
+        for(int i = 0;i<a1.length();i++){
+            if(a1.charAt(i)=='a' || a1.charAt(i)=='e'||a1.charAt(i)=='i' || a1.charAt(i)=='o' || a1.charAt(i)=='u')
+            {
+                counter+=1;
+            }
+        }
+        System.out.print("Number of Vowels in the String:" + counter);
+        
+    
+    }
+}
+
+/** 1.Read a String 
+        2.Convert String into All lowercase or uppercase choose one of a kind
+        3. Check Given String with Vowels 
+        4,if matches increase the Counter
+        **/
