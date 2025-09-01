@@ -1,0 +1,24 @@
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        System.out.println("Try programiz.pro");
+        Scanner sc = new Scanner(System.in);
+       /** 1.Read a numeric value
+        2.Convert to String
+        3.Pick each character and convert to Number Again 
+        4,Add Each Digit
+        **/
+        int a = sc.nextInt();
+        //System.out.println(a);
+        String a1 = String.valueOf(a);
+        
+        int sum = 0;
+        for(int i=0;i<a1.length();i++){
+            //System.out.print(a1.charAt(i));
+            sum+= a1.charAt(i) - 48;
+            
+        }System.out.println(sum);
+        
+        
+    }
+}
