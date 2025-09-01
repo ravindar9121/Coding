@@ -1,0 +1,19 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        System.out.println("Try programiz.pro");
+        Scanner sc = new Scanner(System.in);
+       
+        **/
+        String a = sc.nextLine();
+        for(int i = a.length()-1; i >= 0;i-- ){
+            System.out.print(a.charAt(i));
+        }      
+        
+    }
+}
+
+1. Read a String
+2.Print the String from the Last index
