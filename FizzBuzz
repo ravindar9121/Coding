@@ -1,0 +1,83 @@
+Problem: FizzBuzz
+
+Task
+Write a program that prints the numbers from 1 to n, but:
+
+For multiples of 3, print "Fizz" instead of the number.
+
+For multiples of 5, print "Buzz".
+
+For multiples of both 3 and 5, print "FizzBuzz".
+
+Input Format
+
+A single integer n.
+
+Constraints
+
+1
+≤
+𝑛
+≤
+10
+4
+1≤n≤10
+4
+
+Output Format
+
+Print the result for each number on a new line.
+
+Sample Input
+15
+
+Sample Output
+1
+2
+Fizz
+4
+Buzz
+Fizz
+7
+8
+Fizz
+Buzz
+11
+Fizz
+13
+14
+FizzBuzz
+Solution:
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        
+        int n = 45;
+        
+        String f="Fizz";
+        String b="Buzz";
+        
+        for(int i=1;i<=n;i++)
+        {
+            if(i%3==0 && i%5==0)
+            {
+                System.out.println("FizzBuzz");
+                continue;
+            }
+            if(i%3 == 0)
+            {
+                System.out.println(f);
+                continue;
+            }
+            if(i%5==0)
+            {
+                System.out.println(b);
+                continue;
+            }
+            else{System.out.println(i);}
+        }
+    
+    }
+}
